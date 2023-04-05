@@ -155,8 +155,8 @@ def get_dataset(args, n_list, k_list, class_list):
         #### class 10개 선택하기 
         all_class_list = np.sort(np.random.choice(np.arange(1, 201), size=args.num_classes, replace=False))
         
-        train_dataset = Cub2011(data_dir, train=True, download=False, class_list=all_class_list, transform=trans_cub_train)
-        test_dataset = Cub2011(data_dir, train=False, download =False, class_list=all_class_list, transform=trans_cub_val) 
+        train_dataset = Cub2011(data_dir, train=True, download=True, class_list=all_class_list, transform=trans_cub_train)
+        test_dataset = Cub2011(data_dir, train=False, download =True, class_list=all_class_list, transform=trans_cub_val) 
        
         
         if args.iid:
