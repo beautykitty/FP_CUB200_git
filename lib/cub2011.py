@@ -31,8 +31,8 @@ class Cub2011(VisionDataset):
         if download:
             self._download()
 
-        if not self._check_integrity():
-            raise RuntimeError('Dataset not found or corrupted. You can use download=True to download it')
+        #if not self._check_integrity():
+        #   raise RuntimeError('Dataset not found or corrupted. You can use download=True to download it')
 
     def _load_metadata(self):
         images = pd.read_csv(os.path.join(self.root, 'CUB_200_2011', 'images.txt'), sep=' ',
