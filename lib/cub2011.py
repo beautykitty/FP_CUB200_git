@@ -81,7 +81,7 @@ class Cub2011(VisionDataset):
         if self._check_integrity():
             print('Files already downloaded and verified')
 
-        # download_file_from_google_drive(self.file_id, self.root, self.filename, self.tgz_md5)
+        download_file_from_google_drive(self.file_id, self.root, self.filename, self.tgz_md5)
 
         with tarfile.open(os.path.join(self.root, self.filename), "r:gz") as tar:
             tar.extractall(path=self.root)
