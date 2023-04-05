@@ -12,7 +12,7 @@ import numpy as np
 
 class Cub2011(VisionDataset):
 
-    base_folder = 'CUB_200_2011\\images'
+    base_folder = 'CUB_200_2011/images'
     # url = 'http://www.vision.caltech.edu/visipedia-data/CUB-200-2011/CUB_200_2011.tgz'
     url = "https://s3.amazonaws.com/fast-ai-imageclas/CUB_200_2011.tgz"
     file_id = '1hbzc_P1FuxMkcabkgn9ZKinBwW683j45'
